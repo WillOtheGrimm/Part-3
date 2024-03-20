@@ -1,15 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Apple;
 
-public class Archer : Villager 
+public class Archer : Villager
 {
-
-
     public GameObject arrowPrefab;
     public Transform spawnPoint;
-
 
     protected override void Attack()
     {
@@ -21,7 +17,5 @@ public class Archer : Villager
     public override ChestType CanOpen()
     {
         return ChestType.Archer;
-
-
     }
 }
