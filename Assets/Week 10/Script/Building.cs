@@ -56,12 +56,15 @@ public class Building : MonoBehaviour
 
     IEnumerator StartBuilding()
     {
+        poleLeft.transform.localScale = Vector3.zero;
         speed1 = 0;
         poleLeft.SetActive(true);
         yield return new WaitForSeconds(2f);
+        poleRight.transform.localScale = Vector3.zero;
         speed2 = 0;
         poleRight.SetActive(true);
         yield return new WaitForSeconds(2f);
+        roof.transform.localScale = Vector3.zero;
         speed3 = 0;
         roof.SetActive(true);
 
