@@ -275,7 +275,7 @@ MonoBehaviour:
   roof: {fileID: 1354073793}
   poleLeft: {fileID: 1773008254}
   poleRight: {fileID: 1626890818}
-  interpolation: 8
+  interpolation: 6
   curve:
     serializedVersion: 2
     m_Curve:
