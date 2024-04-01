@@ -8,7 +8,8 @@ public class MainClass : MonoBehaviour
 
     Vector3 mouseDirection;
     Collider2D collider2D;
-
+    public GameObject ingredientSnap;
+   
 
 
     // Start is called before the first frame update
@@ -21,9 +22,20 @@ public class MainClass : MonoBehaviour
     void Update()
     {
       
-
-
+        if (collider2D.enabled == false && Input.GetMouseButtonUp(0) ) transform.position = ingredientSnap.transform.position;
+     
     }
+
+
+
+
+   
+
+
+
+
+
+
 
 
 
