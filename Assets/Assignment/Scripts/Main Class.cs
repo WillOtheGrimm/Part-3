@@ -7,22 +7,25 @@ public class MainClass : MonoBehaviour
 
 
     Vector3 mouseDirection;
-    Collider2D collider2D;
-    public GameObject ingredientSnap;
-   
+    protected Collider2D hitBox;
+    public GameObject snappingPoint;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        collider2D = GetComponent<Collider2D>();
+        hitBox = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
-      
-        if (collider2D.enabled == false && Input.GetMouseButtonUp(0) ) transform.position = ingredientSnap.transform.position;
+
+
+        if (hitBox.enabled == false && Input.GetMouseButtonUp(0) ) transform.position = snappingPoint.transform.position;
+
+        
+
      
     }
 
@@ -31,7 +34,11 @@ public class MainClass : MonoBehaviour
 
    
 
+    public virtual void Snapping ()
+    {
+        if (hitBox.enabled == false && Input.GetMouseButtonUp(0)) transform.position = snappingPoint.transform.position;
 
+    }
 
 
 
@@ -61,16 +68,11 @@ public class MainClass : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public virtual void OnTriggerEnter2D(Collider2D collision)
     {
-            collider2D.enabled = false;
-        Debug.Log("triggered");
+            hitBox.enabled = false;
+            Debug.Log("triggered");
     }
-
-
-
-
-
 
 
 
