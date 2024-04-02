@@ -6,7 +6,8 @@ public class Cooker : MonoBehaviour
 {
     //Get access to all the object that uses the Interface class
     private Interface[] interfaces;
-    public GameObject lerpDestination;
+    //reference to the transform of the object given
+    public Transform cookDestination;
 
     void Start()
     {
@@ -35,32 +36,35 @@ public class Cooker : MonoBehaviour
         {
             return;
         }
-       //if any ingredient is present allow to cook (clear the object on board)
+       //when pressing the cook button make sure that ingredient are present and start corroutine for animation
+       StartCoroutine(CookingRoutine());
+
+    }
+
+
+
+    IEnumerator CookingRoutine()
+    {
+        //This is to wait that all animations are done before clearing the objects
+        foreach (var item in interfaces)
+        {
+            yield return StartCoroutine(item.CookingAnimationRoutine(cookDestination));
+
+        }
+
+
+
+
+      //if any ingredient is present allow to cook (clear the object on board)
         foreach (var component in interfaces)
         {
-            component.ClearItems();
+            component.ClearItem();
         }
 
 
         //this adds to the recipe counter
         RecipeCounter.AddRecipe();
 
-
-       // StartCoroutine(CookingRoutine());
-
-        
-
-
     }
-
-
-
-   /* IEnumerator CookingRoutine()
-    {
-     
-
-
-        
-    }*/
 
 }

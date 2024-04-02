@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3342793396225720591}
   - component: {fileID: 5755209012594954129}
-  - component: {fileID: 8245035268635336351}
   - component: {fileID: 3501264743035472383}
+  - component: {fileID: 2205152723175622080}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Untagged
@@ -86,19 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8245035268635336351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7914276090661980593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3abe62c3047e75488fdcd98b2cb069b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snappingPoint: {fileID: 4194627695967882338, guid: 73bdd140ebe187e44bae9aececc6b71d, type: 3}
 --- !u!61 &3501264743035472383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,3 +131,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.7059507, y: 1.2600999}
   m_EdgeRadius: 0
+--- !u!114 &2205152723175622080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7914276090661980593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da90ac55b8e7e614ba718110cb933440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snappingPoint: {fileID: 4194627695967882338, guid: 73bdd140ebe187e44bae9aececc6b71d, type: 3}

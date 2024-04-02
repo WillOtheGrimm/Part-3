@@ -1536,6 +1536,7 @@ MonoBehaviour:
   - {fileID: 7914276090661980593, guid: 10f9e6e9ec4b62348a0fbfaad3e96135, type: 3}
   - {fileID: 4841265796747001624, guid: a7f5bc23c5afdf447a3d34f30af53466, type: 3}
   dropdown: {fileID: 670899560}
+  speed: 5
 --- !u!1 &680754867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2679,6 +2680,7 @@ MonoBehaviour:
   - {fileID: 9039411479493891375, guid: 0de4a3edceb11c445900b9c3d601193e, type: 3}
   - {fileID: 1608656828103941018, guid: 7e7b75d1c77938342ad96eba18811594, type: 3}
   dropdown: {fileID: 997426579}
+  speed: 5
 --- !u!1 &1098448768
 GameObject:
   m_ObjectHideFlags: 0
@@ -2992,7 +2994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b878f261dd975be4ca5bcdaef3aabf4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpDestination: {fileID: 0}
+  cookDestination: {fileID: 1733048175}
 --- !u!4 &1174247813
 Transform:
   m_ObjectHideFlags: 0
@@ -3252,6 +3254,7 @@ MonoBehaviour:
   - {fileID: 1350702745585899295, guid: 8abd0bab4ebcb544d8f5b4a6b8437747, type: 3}
   - {fileID: 6495789276339801340, guid: b048d174cdd6b4d43ac159486712ee8c, type: 3}
   dropdown: {fileID: 1286985473}
+  speed: 5
 --- !u!1 &1319870708
 GameObject:
   m_ObjectHideFlags: 0
@@ -4141,6 +4144,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!1 &1733048173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1733048175}
+  m_Layer: 0
+  m_Name: Animation Destination
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1733048175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733048173}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.04, y: -1.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1835513946
 GameObject:
   m_ObjectHideFlags: 0
@@ -4972,3 +5006,4 @@ SceneRoots:
   - {fileID: 546863819}
   - {fileID: 2089602456}
   - {fileID: 1174247813}
+  - {fileID: 1733048175}

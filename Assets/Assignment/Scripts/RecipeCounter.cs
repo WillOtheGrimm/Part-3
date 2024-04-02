@@ -4,9 +4,8 @@ using UnityEngine;
 public class RecipeCounter : MonoBehaviour
 {
     public TextMeshProUGUI counter;
-
     public static RecipeCounter singleton;
-    private int recipeCount;
+    int recipeCount;
 
 
     //this set the singleton instance when the scene is loaded

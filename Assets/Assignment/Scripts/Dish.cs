@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Dish : Interface
 {
-    public override IEnumerator CookingAnimationRoutine()
+
+    //This makes it so that the dish doesnt move in the animation
+    public override IEnumerator CookingAnimationRoutine(Transform destination)
     {
-        return base.CookingAnimationRoutine();
+        yield return null;
     }
 }
